@@ -12,3 +12,6 @@ $ git commit -m "wrote a readme file"
 
 $ git status
 $ git diff readme.txt 
+
+$ git reset --hard HEAD^  t必须知道当前版本是哪个版本，在Git中，用HEAD表示当前版本，也就是最新的提交1094adb...（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上
+$ git reflog
