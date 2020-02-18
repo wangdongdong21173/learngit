@@ -1,0 +1,14 @@
+
+git 学习笔记
+$ git config --global user.name "wangdongdong1702"
+$ git config --global user.email "462102334@qq.com"
+$ mkdir learngit
+$ cd learngit
+$ pwd
+
+$ git init
+$ git add readme.txt
+$ git commit -m "wrote a readme file"
+
+$ git status
+$ git diff readme.txt 
