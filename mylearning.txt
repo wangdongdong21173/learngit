@@ -18,3 +18,43 @@ $ git reflog
 
 $ git checkout -- readme.txt  丢弃工作区
 git reset HEAD readme.txt   把暂存区的修改撤销掉（unstage），重新放回工作区
+
+
+$ rm test.txt
+$ git rm test.txt
+$ git checkout -- test.txt  用版本库里的版本替换工作区的版本
+
+$ ssh-keygen -t rsa -C "youremail@example.com"  创建SSH Key
+https://github.com/join   wangdongdong21173	 wangdongdong@yundaex.com	K285BYP49UOTw
+GitHub允许你添加多个Key。假定你有若干电脑，你一会儿在公司提交，一会儿在家里提交，只要把每台电脑的Key都添加到GitHub，就可以在每台电脑上往GitHub推送了
+
+因为您已启用电子邮件隐私，所以 wangdongdong@yundaex.com将用于与帐户相关的通知以及密码重置。61186212+wangdongdong21173@users.noreply.github.com将用于基于Web的Git操作，例如编辑和合并。
+
+
+
+$ git remote add origin git@github.com:michaelliao/learngit.git		第一次使用Git的clone或者push命令连接GitHub时，会得到一个警告
+$ git push -u origin master  第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令
+$ git push origin master
+
+
+$ git clone git@github.com:michaelliao/gitskills.git    michaelliao替换为wangdongdong21173
+https://github.com/wangdongdong21173/gitskills.git
+
+https://github.com/michaelliao/gitskills.git  使用https协议，速度慢，每次推送都必须输入口令，开放http端口的公司内部就无法使用ssh协议而只能用https
+
+
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>或者git switch <name>
+
+创建+切换分支：git checkout -b <name>或者git switch -c <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+
+
+$ git log --graph --pretty=oneline --abbrev-commit
+
